@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:title>movie_title</dc:title>
+        <dc:language>en</dc:language>
+        <dc:identifier id="dcidid">movie_url</dc:identifier>
+        <meta property="dcterms:modified">2018-02-20T05:38:45Z</meta>
+    </metadata>
+    <manifest>
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+        <item id="toc" href="toc.html" media-type="application/xhtml+xml" properties="nav" />
+        <item id="cover_img" href="image/cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+        <item id="cover" href="cover.html" media-type="application/xhtml+xml"/>
+        <item id="title" href="title.html" media-type="application/xhtml+xml"/>
+        <item id="summary" href="summary.html" media-type="application/xhtml+xml"/>
+        <item id="synopsis" href="synopsis.html" media-type="application/xhtml+xml"/>
+        <item id="trivia" href="trivia.html" media-type="application/xhtml+xml"/>
+        <item id="goofs" href="goofs.html" media-type="application/xhtml+xml"/>
+        <item id="quotes" href="quotes.html" media-type="application/xhtml+xml"/>
+        <item id="faq" href="faq.html" media-type="application/xhtml+xml"/>
+        <item id="reviews" href="reviews.html" media-type="application/xhtml+xml"/>
+        <item id="style.css" href="css/style.css" media-type="text/css"/>
+        <item id="LucidaSansUnicode.ttf" href="font/LucidaSansUnicode.ttf" media-type="application/vnd.ms-opentype"/>
+        <item id="MinionPro-Regular.otf" href="font/MinionPro-Regular.otf" media-type="application/vnd.ms-opentype"/>
+        <item id="MinionPro-Bold.otf" href="font/MinionPro-Bold.otf" media-type="application/vnd.ms-opentype"/>
+        <item id="MinionPro-It.otf" href="font/MinionPro-It.otf" media-type="application/vnd.ms-opentype"/>
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="cover"/>
+        <itemref idref="title"/>
+        <itemref idref="summary"/>
+        <itemref idref="synopsis"/>
+        <itemref idref="trivia"/>
+        <itemref idref="goofs"/>
+        <itemref idref="quotes"/>
+        <itemref idref="faq"/>
+        <itemref idref="reviews"/>
+    </spine>
+</package>

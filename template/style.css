@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "lucida sans";
+    src: url("../font/LucidaSansUnicode.ttf")
+}
+@font-face {
+    font-family: "Minion Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/MinionPro-Regular.otf");
+}
+@font-face {
+    font-family: "Minion Pro";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../font/MinionPro-It.otf");
+}
+@font-face {
+    font-family: "Minion Pro";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../font/MinionPro-Bold.otf")
+}
+body {
+    font-family: "Minion Pro", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 1.5;
+}
+h1 {
+    font-family: "lucida sans", serif;
+    font-size: 24pt;
+    text-align: center;
+}
+.single {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+p {
+    text-indent: 2em;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+#movie-title {
+    text-align: center;
+    margin-top: 3ex;
+}
+#rating-para {
+    text-align: center;
+    font-size: 14pt;
+}
+.rating-value {
+    font-size: 2em;
+}
+.summary-author, .vote {
+    text-align: right;
+    text-indent: 0;
+    color: #888;
+}
+.character, .goof-type {
+    font-weight: bold;
+}
+.voice-over {
+    font-style: italic;
+}
+.review-title, .question {
+    font-weight: bold;
+    font-size: 14pt;
+}
+.no-indent {
+    text-indent: 0;
+}
+.review-meta {
+    text-align: right;
+}
+
