@@ -3,7 +3,9 @@ import os
 import shutil
 import html
 
-def write_meta(movie_title, movie_url, working_dir):
+def write_meta(cursor, movie_title, working_dir):
+    cursor.execute('SELECT url FROM movie WHERE title=?', (movie_title,))
+    movie_url = str(cursor.fetchone()[0])
     with open('template/container.xml', 'r') as f:
         container_xml_content = f.read()
 
@@ -178,7 +180,7 @@ def write_reviews(cursor, movie_title, OEBPS_dir, template):
     with open(OEBPS_dir + 'reviews.html', 'w', encoding='utf-8') as f:
         f.write(template.replace('content_of_body', content_of_body))
 
-def make_epub(movie_title, movie_url, working_dir, db_path):
+def make_epub(movie_title, working_dir, db_path):
     print('制作epub...')
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
@@ -186,7 +188,7 @@ def make_epub(movie_title, movie_url, working_dir, db_path):
     OEBPS_dir = working_dir + 'OEBPS/'
     with open('template/general.html', 'r') as f:
         template = f.read()
-    write_meta(movie_title, movie_url, working_dir)
+    write_meta(cursor, movie_title, working_dir)
     write_cover_page(movie_title, OEBPS_dir)
     write_title_page(cursor, movie_title, OEBPS_dir, template)
     write_synopsis(cursor, movie_title, OEBPS_dir, template)
@@ -207,7 +209,3 @@ def make_epub(movie_title, movie_url, working_dir, db_path):
         print("Failed: Remove " + target_path + " manually and retry.")
         exit(1)
     os.rename(movie_title + '.zip', target_path)
-
-# test
-if __name__ == '__main__':
-    make_epub('Transformers', 'https://www.imdb.com/title/tt0418279/', 'imdb-movie-tmp/', 'imdb-movie-tmp/imdb_movie.db')

@@ -26,7 +26,7 @@ logger.addHandler(handler)
 imdb_url = 'https://www.imdb.com'
 
 
-def get_basic_info(cursor, hpage_html, working_dir):
+def get_basic_info(cursor, hpage_html, working_dir, movie_url):
     """Retrieve basic information of a movie from hpage_html.
 
     Basic information includes release year, movie title, rating value, rating count,
@@ -37,7 +37,8 @@ def get_basic_info(cursor, hpage_html, working_dir):
         cursor: cursor of a connection to sqlite.
         hpage_html: string, homepage of a movie, e.g. HTML text of URL 'https://www.imdb.com/title/tt2015381/'
         working_dir: string, a directory to store temporary files, e.g. 'imdb-movie-tmp/'
-    
+        movie_url: url of movie homepage, e.g. 'https://www.imdb.com/title/tt2015381/'
+
     Returns:
         movie title.
     """
@@ -72,9 +73,9 @@ def get_basic_info(cursor, hpage_html, working_dir):
     with open(poster_file_name, 'wb') as f:
         f.write(requests.get(poster_image_url).content)
 
-    # movie(title, year, rating_value, rating_count, poster_path, synopsis)
-    cursor.execute('INSERT INTO movie VALUES(?, ?, ?, ?, ?, ?)', 
-                    (movie_title, year, rating_value, rating_count, poster_file_name, ''))
+    # movie(title, url, year, rating_value, rating_count, poster_path, synopsis)
+    cursor.execute('INSERT INTO movie VALUES(?, ?, ?, ?, ?, ?, ?)', 
+                    (movie_title, movie_url, year, rating_value, rating_count, poster_file_name, ''))
     return movie_title
 
 def get_summary_and_synopsis(cursor, hpage_html, movie_title):
@@ -217,6 +218,10 @@ def get_goofs(cursor, hpage_html, movie_title, movie_url):
 
     # 1. fetch goof page
     result = etree.HTML(hpage_html).xpath('//div[@id="goofs"]/a[text()="See more"]/@href')
+    if len(result) == 0:
+        print("0条")
+        logger.debug('# of goofs: 0')
+        return
     goofs_url = movie_url + str(result[0])
     logger.debug('goofs_url: ' + goofs_url)
     goofs_page = pyquery.PyQuery(requests.get(goofs_url).text)
@@ -262,7 +267,6 @@ def get_quotes(cursor, hpage_html, movie_title, movie_url):
             # quote(quote_id, no, character, content)
             cursor.execute('INSERT INTO quote VALUES(?, ?, ?, ?)',(count, no, character, quote))
             no += 1
-        count += 1
         vote = q.find('.interesting-count-text').text()
         result = re.search(regex, vote)
         if result is None:
@@ -274,6 +278,7 @@ def get_quotes(cursor, hpage_html, movie_title, movie_url):
         # quotes(id, movie_title, vote_count, interesting_count)
         cursor.execute('INSERT INTO quotes VALUES(?, ?, ?, ?)', 
                         (count, movie_title, total_count, interesting_count))
+        count += 1
     print('{}条'.format(count))
     logger.debug('# of quotes: ' + str(count))
 
@@ -413,7 +418,7 @@ def collect_movie_info(movie_url, working_dir, db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     hpage_html = requests.get(movie_url).text
-    movie_title = get_basic_info(cursor, hpage_html, working_dir)
+    movie_title = get_basic_info(cursor, hpage_html, working_dir, movie_url)
     get_summary_and_synopsis(cursor, hpage_html, movie_title)
     get_trivia(cursor, hpage_html, movie_title, movie_url)
     get_goofs(cursor, hpage_html, movie_title, movie_url)

@@ -1,10 +1,14 @@
 import os
+import subprocess
 import shutil
+import zipfile
 import sqlite3
 import imdb_scraper
+import tex_maker
 import ebook_maker
 import sys
 import re
+import argparse
 
 def create_database(db_path):
     conn = sqlite3.connect(db_path)
@@ -12,6 +16,7 @@ def create_database(db_path):
     create_tables = [
         '''CREATE TABLE movie(
             title TEXT PRIMARY KEY,
+            url TEXT NOT NULL,
             year INTEGER,
             rating_value INTEGER,
             rating_count INTEGER,
@@ -97,23 +102,85 @@ def create_working_dir(working_dir):
         exit(1)
 
 if __name__ == '__main__':
-    #movie_url = 'https://www.imdb.com/title/tt0418279/'
-    if len(sys.argv) > 1:
-        movie_url = sys.argv[1]
-    else:
-        print('Usage: python imdb-ebook.py <URL>')
-        exit(1)
-    if not re.match('^https://www.imdb.com/title/tt\\d+/$', movie_url):
-        print('Provide URL like https://www.imdb.com/title/tt0418279/')
-        exit(1)
+    parser = argparse.ArgumentParser(description="Download information about a movie from IMDb.")
+    source_group = parser.add_mutually_exclusive_group(required=True)
+    source_group.add_argument("-u", "--url",help="URL of movie in IMDb")
+    source_group.add_argument("-f", "--file", help="database downloaded from IMDb, the database file can be obtained by specifying -d option")
+    parser.add_argument("target", choices=["epub", "pdf", "database"], help="epub: create an ebook in epub format, pdf: create an ebook in pdf format using latex, database: download information about a movie from IMDb as a database file")
+    
+    args = parser.parse_args()
+
     working_dir = 'imdb-movie-tmp/'
     db_path = working_dir + 'imdb_movie.db'
     create_working_dir(working_dir)
-    create_database(db_path)
-    movie_title = imdb_scraper.collect_movie_info(movie_url, working_dir, db_path)
-    #movie_title = "Transformers"
-    ebook_maker.make_epub(movie_title, movie_url, working_dir, db_path)
 
+    if args.url:
+        movie_url = args.url
+        if not re.match('^https://www.imdb.com/title/tt\\d+/$', movie_url):
+            print('Provide URL like https://www.imdb.com/title/tt0418279/')
+            shutil.rmtree(working_dir)
+            exit(1)
+        create_database(db_path)
+        movie_title = imdb_scraper.collect_movie_info(movie_url, working_dir, db_path)
+    else: # args.file is not None.
+        file = zipfile.ZipFile(args.file)
+        file.extractall(working_dir)
+        movie_title = os.listdir(working_dir)[0]
+        database_directory = working_dir + movie_title + '/'
+        poster_file_name = database_directory + movie_title + '_poster.jpg'
+        database_file_name = database_directory + 'imdb_movie.db'
+        shutil.move(poster_file_name, working_dir)
+        shutil.move(database_file_name, working_dir)
+        shutil.rmtree(database_directory)
+    
+    if args.target == "epub":
+        ebook_maker.make_epub(movie_title, working_dir, db_path)
+    elif args.target == "database":
+        if args.file:
+            print('已经存在数据库文件' + args.file)
+            shutil.rmtree(working_dir)
+            exit(0)
+        else:
+            target_filename = movie_title + '_db.zip'
+            print('保存到数据库文件' + target_filename + '...')
+            database_directory = working_dir + movie_title + '/'
+            poster_file_name = working_dir + movie_title + '_poster.jpg'
+            database_file_name = working_dir + 'imdb_movie.db'
+            os.mkdir(database_directory)
+            shutil.move(poster_file_name, database_directory)
+            shutil.move(database_file_name, database_directory)
+            if os.path.exists(target_filename):
+                print('覆盖文件' + target_filename)
+                os.remove(target_filename)
+            shutil.make_archive(movie_title + '_db', 'zip', working_dir)
+    else: # args.target == "pdf"
+        tex_maker.make_tex(movie_title, working_dir, db_path)
+        print('编译...')
+        os.chdir(working_dir + movie_title)
+        try:
+            return_code = subprocess.call(["xelatex", movie_title + '.tex', '-interaction=nonstopmode'], stdout=open(os.devnull, 'w'))
+            if return_code != 0:
+                print('失败，请检查tex源文件中的错误，手动编译')
+            else:
+                if os.path.exists('../../' + movie_title + '.pdf'):
+                    print('覆盖文件')
+                    os.remove('../../' + movie_title + '.pdf')
+                shutil.move(movie_title + '.pdf', '../../')
+            os.chdir('../../')
+        except FileNotFoundError as e:
+            print('找不到xelatex，请手动编译' + movie_title + '\\目录里的tex源文件。')
+            os.chdir('../')
+            if os.path.exists('../' + movie_title):
+                shutil.rmtree('../' + movie_title)
+            shutil.copytree(movie_title, '../' + movie_title)
+            os.chdir('../')
+        except Exception as e:
+            os.chdir('../')
+            if os.path.exists('../' + movie_title):
+                shutil.rmtree('../' + movie_title)
+            shutil.copytree(movie_title, '../' + movie_title)
+            os.chdir('../')
+ 
     print('清理文件...')
     shutil.rmtree(working_dir)
     print('完成')

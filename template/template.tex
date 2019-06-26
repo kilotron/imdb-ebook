@@ -1,0 +1,100 @@
+\documentclass[oneside, b5paper]{book}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{geometry} % margin
+\usepackage{incgraph} % poster
+\usepackage{indentfirst}
+\usepackage{amssymb} % \bigstar
+\nonstopmode % do not stop on error
+\setmainfont{MinionPro-Regular.otf}[
+    BoldFont=MinionPro-Bold.otf,
+    ItalicFont=MinionPro-It.otf,
+    BoldItalicFont=MinionPro-BoldIt.otf
+]
+
+\title{#movie_title# (#year#)}
+\author{}
+\date{\today}
+
+% redefine \maketitle
+\makeatletter
+\renewcommand{\maketitle}{
+    \begin{titlepage}
+        \vspace*{\stretch{1}}
+        \begin{center}
+            \LARGE
+            {\Huge \@title} \\
+            \vspace{\stretch{1}}
+            {\huge #rating_value# \Large /10 based on #rating_count# user ratings} \\
+            \vspace{\stretch{6}}
+            %\vfill
+            \@date
+        \end{center}
+    \end{titlepage}
+}
+\makeatother
+
+% redefine chapter title style
+% \titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
+% command=\chapter;
+% shape=hang: default value, like \section;
+% format=\Huge\bfseries, the format to be applied to the whole title—label and text;
+% label=\thechapter\hsp\textcolor{gray75}{|}\hsp, e.g. 1 | ;
+% sep=0pt, horizontal seperation between label and title body is set to 0, the horizontal space has been defined in label;
+% beforecode=\Huge\bfseries, the code preceding the title body, which take the title text as its argument.
+\usepackage{titlesec}
+\newcommand{\hsp}{\hspace{20pt}}
+\definecolor{gray75}{gray}{0.75}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+% define a quote environment
+\usepackage{mdframed}
+\mdfdefinestyle{quote}{
+    linewidth=3pt,
+    linecolor=gray!50,
+    topline=false,
+    bottomline=false,
+    rightline=false,
+}
+\newenvironment{quotes}{
+    \begin{mdframed}[style=quote]
+    \setlength{\baselineskip}{1.5\baselineskip}
+}{
+    \end{mdframed}
+}
+
+% \pagestyle{fancy}
+% \renewcommand{\chaptermark}[1]{\markboth{Chapter \thechapter\quad #1}{}}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \fancyhead[L]{\textbf{\leftmark}}
+% \fancyhead[R]{\textbf{\thepage}}
+
+\begin{document}
+
+% poster page, the graphic is centered in the first page.
+\incgraph[documentpaper, bookmark=Cover][width=\paperwidth, height=\paperheight]{poster}
+
+% title page
+\newgeometry{margin=3cm}
+\maketitle
+
+\newgeometry{left=1cm, right=1cm, top=1.5cm, bottom=1.5cm}
+% increase space between lines to make it more readable 
+\fontsize{13pt}{15.6pt}\selectfont
+\setlength{\baselineskip}{1.5\baselineskip}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\chapter{Summary}
+#summary#
+\chapter{Synopsis}
+#synopsis#
+\chapter{Trivia}
+#trivia#
+\chapter{Goofs}
+#goofs#
+\chapter{Quotes}
+#quotes#
+\chapter{FAQ}
+#faq#
+\chapter{User Reviews}
+#reviews#
+\end{document}
