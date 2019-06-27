@@ -43,7 +43,7 @@ def get_basic_info(cursor, hpage_html, working_dir, movie_url):
         movie title.
     """
     
-    print('获取电影信息...')
+    print('从' + movie_url + '获取电影信息...')
 
     # get year, movie title, rating value and rating count
     hpage = pyquery.PyQuery(hpage_html)
@@ -52,6 +52,7 @@ def get_basic_info(cursor, hpage_html, working_dir, movie_url):
     movie_title = hpage('h1').text()
     rating_value = hpage('[itemprop=ratingValue]').text()
     rating_count = hpage('[itemprop=ratingCount]').text()
+    print('电影：' + movie_title)
 
     # 1. url of poster display page
     # 2. get poster id from poster_url

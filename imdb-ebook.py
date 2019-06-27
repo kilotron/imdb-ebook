@@ -106,7 +106,7 @@ if __name__ == '__main__':
     source_group = parser.add_mutually_exclusive_group(required=True)
     source_group.add_argument("-u", "--url",help="URL of movie in IMDb")
     source_group.add_argument("-f", "--file", help="database downloaded from IMDb, the database file can be obtained by specifying -d option")
-    parser.add_argument("target", choices=["epub", "pdf", "database"], help="epub: create an ebook in epub format, pdf: create an ebook in pdf format using latex, database: download information about a movie from IMDb as a database file")
+    parser.add_argument("target", choices=["epub", "pdf", "database", "tex"], help="epub: create an ebook in epub format, pdf: create an ebook in pdf format using latex, database: download information about a movie from IMDb as a database file, tex: tex source file")
     
     args = parser.parse_args()
 
@@ -116,10 +116,13 @@ if __name__ == '__main__':
 
     if args.url:
         movie_url = args.url
-        if not re.match('^https://www.imdb.com/title/tt\\d+/$', movie_url):
+        match_result = re.search('https://www.imdb.com/title/tt\\d+/', movie_url)
+        if match_result == None:
             print('Provide URL like https://www.imdb.com/title/tt0418279/')
             shutil.rmtree(working_dir)
             exit(1)
+        else:
+            movie_url = match_result.group()
         create_database(db_path)
         movie_title = imdb_scraper.collect_movie_info(movie_url, working_dir, db_path)
     else: # args.file is not None.
@@ -153,6 +156,11 @@ if __name__ == '__main__':
                 print('覆盖文件' + target_filename)
                 os.remove(target_filename)
             shutil.make_archive(movie_title + '_db', 'zip', working_dir)
+    elif args.target == "tex":
+        tex_maker.make_tex(movie_title, working_dir, db_path)
+        if os.path.exists(movie_title):
+            shutil.rmtree(movie_title)
+        shutil.copytree(working_dir + movie_title, movie_title)
     else: # args.target == "pdf"
         tex_maker.make_tex(movie_title, working_dir, db_path)
         print('编译...')

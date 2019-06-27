@@ -49,13 +49,16 @@ def replace_tex_special_char(s):
         '}': '\\}',
         '_': '\\_',
         '~': '$\\sim$',
-        '^': '\\^\{\}'
+        '^': '\\^{}'
     }
     for key, value in d.items():
         s = s.replace(key, value)
     # '' -> `', "" -> ``''
-    if s.count('\'') % 2 == 0:
-        s = interval_replace(s, '\'', '`', '\'')
+    # Single quote is less often used as quotation mark. However, it is used as
+    # apostrophe frequently since the apostrophe is the same character as the 
+    # single quotation mark.
+    # if s.count('\'') % 2 == 0:
+    #     s = interval_replace(s, '\'', '`', '\'')
     if s.count('"') % 2 == 0:
         s = interval_replace(s, '"', '``', '\'\'')    
     return s

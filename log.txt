@@ -1,0 +1,647 @@
+2019-06-26 21:20:18 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:21 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/ HTTP/1.1" 200 None
+2019-06-26 21:20:21 - imdb_scraper.py[line:60] - DEBUG: poster_url: https://www.imdb.com/title/tt3896198/mediaviewer/rm911094272
+2019-06-26 21:20:21 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:23 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/mediaviewer/rm911094272 HTTP/1.1" 200 None
+2019-06-26 21:20:24 - imdb_scraper.py[line:70] - DEBUG: poster_image_url: https://m.media-amazon.com/images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg
+2019-06-26 21:20:24 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): m.media-amazon.com:443
+2019-06-26 21:20:25 - connectionpool.py[line:393] - DEBUG: https://m.media-amazon.com:443 "GET /images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg HTTP/1.1" 200 186813
+2019-06-26 21:20:27 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:29 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/plotsummary HTTP/1.1" 200 None
+2019-06-26 21:20:30 - imdb_scraper.py[line:113] - DEBUG: # of summaries: 5
+2019-06-26 21:20:31 - imdb_scraper.py[line:143] - DEBUG: trivia_url: https://www.imdb.com/title/tt3896198/trivia
+2019-06-26 21:20:31 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia HTTP/1.1" 200 None
+2019-06-26 21:20:34 - imdb_scraper.py[line:166] - DEBUG: # of trivia: 134
+2019-06-26 21:20:34 - imdb_scraper.py[line:227] - DEBUG: goofs_url: https://www.imdb.com/title/tt3896198/trivia?tab=gf
+2019-06-26 21:20:34 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:37 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia?tab=gf HTTP/1.1" 302 234
+2019-06-26 21:20:38 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/goofs/?tab=gf HTTP/1.1" 200 None
+2019-06-26 21:20:38 - imdb_scraper.py[line:236] - DEBUG: # of goofs: 22
+2019-06-26 21:20:38 - imdb_scraper.py[line:255] - DEBUG: quotes_urlhttps://www.imdb.com/title/tt3896198/trivia?tab=qt
+2019-06-26 21:20:38 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:40 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia?tab=qt HTTP/1.1" 302 235
+2019-06-26 21:20:41 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/quotes/?tab=qt HTTP/1.1" 200 None
+2019-06-26 21:20:42 - imdb_scraper.py[line:284] - DEBUG: # of quotes: 117
+2019-06-26 21:20:42 - imdb_scraper.py[line:303] - DEBUG: No FAQ.
+2019-06-26 21:20:42 - imdb_scraper.py[line:392] - DEBUG: review_url: https://www.imdb.com/title/tt3896198/reviews
+2019-06-26 21:20:42 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:44 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews HTTP/1.1" 200 None
+2019-06-26 21:20:45 - imdb_scraper.py[line:398] - DEBUG: # of reviews in this page: 25
+2019-06-26 21:20:45 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=bmg4k4zbneildddebinuc5ppjzwy4kap2vdxpyxoz2fp4chmyj2ostkoi55gu66yr3x6ugiofehxu
+2019-06-26 21:20:45 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:48 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=bmg4k4zbneildddebinuc5ppjzwy4kap2vdxpyxoz2fp4chmyj2ostkoi55gu66yr3x6ugiofehxu HTTP/1.1" 200 None
+2019-06-26 21:20:48 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 25
+2019-06-26 21:20:48 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=wezah4vugpxjxxckic2ic7qzhquis6rwepsvnmriy5ywcrbxsbe56skyfrwspbr7nphsrgt2kawfc
+2019-06-26 21:20:48 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:51 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=wezah4vugpxjxxckic2ic7qzhquis6rwepsvnmriy5ywcrbxsbe56skyfrwspbr7nphsrgt2kawfc HTTP/1.1" 200 None
+2019-06-26 21:20:53 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 50
+2019-06-26 21:20:53 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=pazadf2lelpzxtxqc44nyr3j4nbhdu7tupgl5ksenkyhepeia66lnzmy3eejs7nyxunpwzixtnsj2
+2019-06-26 21:20:53 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:20:57 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=pazadf2lelpzxtxqc44nyr3j4nbhdu7tupgl5ksenkyhepeia66lnzmy3eejs7nyxunpwzixtnsj2 HTTP/1.1" 200 None
+2019-06-26 21:20:58 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 75
+2019-06-26 21:20:58 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=7h6qhyrblcadv3heeatofcor5kfokf6skl6rafqtwjykqtaxtbowj6pecozi6xedkscfl2vic4rg4
+2019-06-26 21:20:58 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:03 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=7h6qhyrblcadv3heeatofcor5kfokf6skl6rafqtwjykqtaxtbowj6pecozi6xedkscfl2vic4rg4 HTTP/1.1" 200 None
+2019-06-26 21:21:03 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 100
+2019-06-26 21:21:03 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=fvrkb57uyvftmaknq4xucqktft5fwubax2jold3dpsllqh5e6g33zk2qeilypnj3h6r4ow5sgaa3g
+2019-06-26 21:21:03 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:05 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=fvrkb57uyvftmaknq4xucqktft5fwubax2jold3dpsllqh5e6g33zk2qeilypnj3h6r4ow5sgaa3g HTTP/1.1" 200 None
+2019-06-26 21:21:05 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 125
+2019-06-26 21:21:05 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=mqvyabtmtjlz72vdnl436myapeltcybzdujndw5zcnvult4k7txbda7qmk2gg6poggvcvmsf7subi
+2019-06-26 21:21:05 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:07 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=mqvyabtmtjlz72vdnl436myapeltcybzdujndw5zcnvult4k7txbda7qmk2gg6poggvcvmsf7subi HTTP/1.1" 200 None
+2019-06-26 21:21:08 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 150
+2019-06-26 21:21:08 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=kl4flxklumesm24rnufjr2ezdxpkkh3svoohtnien3wakfn44fcanxwhucnejsa6rvrtg6t6hfosu
+2019-06-26 21:21:08 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:10 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=kl4flxklumesm24rnufjr2ezdxpkkh3svoohtnien3wakfn44fcanxwhucnejsa6rvrtg6t6hfosu HTTP/1.1" 200 None
+2019-06-26 21:21:10 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 175
+2019-06-26 21:21:10 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=nbn6idujwhm3qffenfnoiciwklf65la4eu2ikwlki4djne6itl577kxvclzyudta2fzanjlqzvf5u
+2019-06-26 21:21:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:12 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=nbn6idujwhm3qffenfnoiciwklf65la4eu2ikwlki4djne6itl577kxvclzyudta2fzanjlqzvf5u HTTP/1.1" 200 None
+2019-06-26 21:21:12 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 200
+2019-06-26 21:21:12 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r5tdhcz3utc4yg2vkxlxs7234pdmdop3iu6neyll2yejfhjtkyh5gdkujnyxk77mzcwgh656nk3is
+2019-06-26 21:21:12 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:17 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r5tdhcz3utc4yg2vkxlxs7234pdmdop3iu6neyll2yejfhjtkyh5gdkujnyxk77mzcwgh656nk3is HTTP/1.1" 200 None
+2019-06-26 21:21:18 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 225
+2019-06-26 21:21:18 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=4l3rfmqkwjtnteaoxzyazburxh7vfza3l3rtz3f3wnphlm6lqmytbortvqzdqpc7ogtnlfnfk53do
+2019-06-26 21:21:18 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:22 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=4l3rfmqkwjtnteaoxzyazburxh7vfza3l3rtz3f3wnphlm6lqmytbortvqzdqpc7ogtnlfnfk53do HTTP/1.1" 200 None
+2019-06-26 21:21:22 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 250
+2019-06-26 21:21:22 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=njp3e2mcsmceihqzmbsagvziu32lhqyahpct5z6qffohgt2cu35z5qg7lvnfdghiekd4sjzuknjcy
+2019-06-26 21:21:22 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:24 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=njp3e2mcsmceihqzmbsagvziu32lhqyahpct5z6qffohgt2cu35z5qg7lvnfdghiekd4sjzuknjcy HTTP/1.1" 200 None
+2019-06-26 21:21:24 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 275
+2019-06-26 21:21:24 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=5ttsqhgzqotbkfihs4z3ln4ob4sqozksb4r4mjsyho5o3tzhsq6x3yu4bbtaqyutnhidr7tns347y
+2019-06-26 21:21:24 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:27 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=5ttsqhgzqotbkfihs4z3ln4ob4sqozksb4r4mjsyho5o3tzhsq6x3yu4bbtaqyutnhidr7tns347y HTTP/1.1" 200 None
+2019-06-26 21:21:27 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 300
+2019-06-26 21:21:27 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dtn25hnsjdppno3tc6xju4bnmyxwim3aypag3nfykip3qgelej7772u6645f5glilutachjazlpli
+2019-06-26 21:21:27 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:29 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dtn25hnsjdppno3tc6xju4bnmyxwim3aypag3nfykip3qgelej7772u6645f5glilutachjazlpli HTTP/1.1" 200 None
+2019-06-26 21:21:30 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 325
+2019-06-26 21:21:30 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoehllnopasxxj4nfbdrf6pkuct2
+2019-06-26 21:21:30 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:31 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoehllnopasxxj4nfbdrf6pkuct2 HTTP/1.1" 200 None
+2019-06-26 21:21:33 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 350
+2019-06-26 21:21:33 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tey37kvzvrfu2vdn45cche2iniym
+2019-06-26 21:21:33 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:37 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tey37kvzvrfu2vdn45cche2iniym HTTP/1.1" 200 None
+2019-06-26 21:21:38 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 375
+2019-06-26 21:21:38 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddhsuw5titxgmf6xpaasatfxp42g
+2019-06-26 21:21:38 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:39 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddhsuw5titxgmf6xpaasatfxp42g HTTP/1.1" 200 None
+2019-06-26 21:21:40 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 400
+2019-06-26 21:21:40 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cp3yzytyoyq23h4xuz4oa7ob3va
+2019-06-26 21:21:40 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:43 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cp3yzytyoyq23h4xuz4oa7ob3va HTTP/1.1" 200 None
+2019-06-26 21:21:43 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 425
+2019-06-26 21:21:43 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cvvjwjpgnm3rv4lsmgmc6mumm3a
+2019-06-26 21:21:43 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:44 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cvvjwjpgnm3rv4lsmgmc6mumm3a HTTP/1.1" 200 None
+2019-06-26 21:21:45 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 450
+2019-06-26 21:21:45 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dm2q7iokztuobzplbqqmmduj2ta
+2019-06-26 21:21:45 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:47 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dm2q7iokztuobzplbqqmmduj2ta HTTP/1.1" 200 None
+2019-06-26 21:21:50 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 475
+2019-06-26 21:21:50 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dvvl3mqbnh2tjpivqe56b6vybgq
+2019-06-26 21:21:50 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:52 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dvvl3mqbnh2tjpivqe56b6vybgq HTTP/1.1" 200 None
+2019-06-26 21:21:55 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 500
+2019-06-26 21:21:55 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7idzqbdtoqa3hnwcskdi33not3sow
+2019-06-26 21:21:55 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:21:57 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7idzqbdtoqa3hnwcskdi33not3sow HTTP/1.1" 200 None
+2019-06-26 21:21:58 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 525
+2019-06-26 21:21:58 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmufve2jhoasv43kks5e4iyk232ow
+2019-06-26 21:21:58 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:03 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmufve2jhoasv43kks5e4iyk232ow HTTP/1.1" 200 None
+2019-06-26 21:22:04 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 550
+2019-06-26 21:22:04 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmug4cahxgglbyirelv44jeeocr7u
+2019-06-26 21:22:04 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:06 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmug4cahxgglbyirelv44jeeocr7u HTTP/1.1" 200 None
+2019-06-26 21:22:06 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 575
+2019-06-26 21:22:06 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuamy5wfmwsnj2436fba4hunhqd2
+2019-06-26 21:22:06 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:10 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuamy5wfmwsnj2436fba4hunhqd2 HTTP/1.1" 200 None
+2019-06-26 21:22:11 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 600
+2019-06-26 21:22:11 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=qcjotya3hmtuxnxnowtdhmukhcnpk32ws3bg44tgsc2ec6qtms3si3sv5nigk3laelk5l5ynu5dmg
+2019-06-26 21:22:11 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:15 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=qcjotya3hmtuxnxnowtdhmukhcnpk32ws3bg44tgsc2ec6qtms3si3sv5nigk3laelk5l5ynu5dmg HTTP/1.1" 200 None
+2019-06-26 21:22:15 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 625
+2019-06-26 21:22:15 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlspto7fusp7cdoe3li4xlq5p7kja
+2019-06-26 21:22:15 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:18 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlspto7fusp7cdoe3li4xlq5p7kja HTTP/1.1" 200 None
+2019-06-26 21:22:19 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 650
+2019-06-26 21:22:19 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzywyi7pkmtrqloy64atdq5i2dks
+2019-06-26 21:22:19 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:20 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzywyi7pkmtrqloy64atdq5i2dks HTTP/1.1" 200 None
+2019-06-26 21:22:21 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 675
+2019-06-26 21:22:21 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmz2sfzjczy27scjmzme34svhxx4g
+2019-06-26 21:22:21 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:24 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmz2sfzjczy27scjmzme34svhxx4g HTTP/1.1" 200 None
+2019-06-26 21:22:24 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 700
+2019-06-26 21:22:24 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw67lmcviqgs2mirsc4wzj4t3dknu
+2019-06-26 21:22:24 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:26 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw67lmcviqgs2mirsc4wzj4t3dknu HTTP/1.1" 200 None
+2019-06-26 21:22:27 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 725
+2019-06-26 21:22:27 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw65cxz32gsf3fuommnaxyptwjtga
+2019-06-26 21:22:27 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:31 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw65cxz32gsf3fuommnaxyptwjtga HTTP/1.1" 200 None
+2019-06-26 21:22:31 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 750
+2019-06-26 21:22:31 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6s4juoq6mjr4t62bsgztg4hxfrk
+2019-06-26 21:22:31 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6s4juoq6mjr4t62bsgztg4hxfrk HTTP/1.1" 200 None
+2019-06-26 21:22:33 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 775
+2019-06-26 21:22:33 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjubkwjgfdfcxs2ifpvcytkhzx5gg
+2019-06-26 21:22:33 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:34 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjubkwjgfdfcxs2ifpvcytkhzx5gg HTTP/1.1" 200 None
+2019-06-26 21:22:34 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 800
+2019-06-26 21:22:34 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqll372r4dplolq3nf7e2ibfsde4
+2019-06-26 21:22:34 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:36 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqll372r4dplolq3nf7e2ibfsde4 HTTP/1.1" 200 None
+2019-06-26 21:22:36 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 825
+2019-06-26 21:22:36 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7gao2cbp2yovkahwdj5w7d7nkxza
+2019-06-26 21:22:36 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:37 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7gao2cbp2yovkahwdj5w7d7nkxza HTTP/1.1" 200 None
+2019-06-26 21:22:37 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 850
+2019-06-26 21:22:37 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7g5vvuocztjiaarmodhzktnxyzfq
+2019-06-26 21:22:37 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:40 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7g5vvuocztjiaarmodhzktnxyzfq HTTP/1.1" 200 None
+2019-06-26 21:22:40 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 875
+2019-06-26 21:22:40 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fc3as3jxv3svpppdxwmcjrlw7iq
+2019-06-26 21:22:40 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:42 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fc3as3jxv3svpppdxwmcjrlw7iq HTTP/1.1" 200 None
+2019-06-26 21:22:43 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 900
+2019-06-26 21:22:43 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fplryxujqpqgt4h5aqjf24kvfkq
+2019-06-26 21:22:43 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:45 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fplryxujqpqgt4h5aqjf24kvfkq HTTP/1.1" 200 None
+2019-06-26 21:22:45 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 925
+2019-06-26 21:22:45 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7ewpvusw5svyjgh25sqtme6ss6la
+2019-06-26 21:22:45 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:22:47 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7ewpvusw5svyjgh25sqtme6ss6la HTTP/1.1" 200 None
+2019-06-26 21:22:47 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 950
+2019-06-26 21:22:47 - imdb_scraper.py[line:404] - DEBUG: next review_page url: None
+2019-06-26 21:22:47 - imdb_scraper.py[line:416] - DEBUG: # of reviews: 954
+2019-06-26 21:24:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:13 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/ HTTP/1.1" 200 None
+2019-06-26 21:24:14 - imdb_scraper.py[line:60] - DEBUG: poster_url: https://www.imdb.com/title/tt3896198/mediaviewer/rm911094272
+2019-06-26 21:24:14 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:15 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/mediaviewer/rm911094272 HTTP/1.1" 200 None
+2019-06-26 21:24:16 - imdb_scraper.py[line:70] - DEBUG: poster_image_url: https://m.media-amazon.com/images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg
+2019-06-26 21:24:16 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): m.media-amazon.com:443
+2019-06-26 21:24:17 - connectionpool.py[line:393] - DEBUG: https://m.media-amazon.com:443 "GET /images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg HTTP/1.1" 200 186813
+2019-06-26 21:24:17 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:20 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/plotsummary HTTP/1.1" 200 None
+2019-06-26 21:24:21 - imdb_scraper.py[line:113] - DEBUG: # of summaries: 5
+2019-06-26 21:24:21 - imdb_scraper.py[line:143] - DEBUG: trivia_url: https://www.imdb.com/title/tt3896198/trivia
+2019-06-26 21:24:21 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:30 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia HTTP/1.1" 200 None
+2019-06-26 21:24:30 - imdb_scraper.py[line:166] - DEBUG: # of trivia: 134
+2019-06-26 21:24:30 - imdb_scraper.py[line:227] - DEBUG: goofs_url: https://www.imdb.com/title/tt3896198/trivia?tab=gf
+2019-06-26 21:24:30 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia?tab=gf HTTP/1.1" 302 234
+2019-06-26 21:24:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/goofs/?tab=gf HTTP/1.1" 200 None
+2019-06-26 21:24:33 - imdb_scraper.py[line:236] - DEBUG: # of goofs: 22
+2019-06-26 21:24:33 - imdb_scraper.py[line:255] - DEBUG: quotes_urlhttps://www.imdb.com/title/tt3896198/trivia?tab=qt
+2019-06-26 21:24:33 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:35 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/trivia?tab=qt HTTP/1.1" 302 235
+2019-06-26 21:24:36 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/quotes/?tab=qt HTTP/1.1" 200 None
+2019-06-26 21:24:37 - imdb_scraper.py[line:284] - DEBUG: # of quotes: 117
+2019-06-26 21:24:37 - imdb_scraper.py[line:303] - DEBUG: No FAQ.
+2019-06-26 21:24:37 - imdb_scraper.py[line:392] - DEBUG: review_url: https://www.imdb.com/title/tt3896198/reviews
+2019-06-26 21:24:37 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:39 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews HTTP/1.1" 200 None
+2019-06-26 21:24:40 - imdb_scraper.py[line:398] - DEBUG: # of reviews in this page: 25
+2019-06-26 21:24:40 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=bmg4k4zbneildddebinuc5ppjzwy4kap2vdxpyxoz2fp4chmyj2ostkoi55gu66yr3x6ugiofehxu
+2019-06-26 21:24:40 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:43 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=bmg4k4zbneildddebinuc5ppjzwy4kap2vdxpyxoz2fp4chmyj2ostkoi55gu66yr3x6ugiofehxu HTTP/1.1" 200 None
+2019-06-26 21:24:43 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 25
+2019-06-26 21:24:43 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=wezah4vugpxjxxckic2ic7qzhquis6rwepsvnmriy5ywcrbxsbe56skyfrwspbr7nphsrgt2kawfc
+2019-06-26 21:24:43 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:45 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=wezah4vugpxjxxckic2ic7qzhquis6rwepsvnmriy5ywcrbxsbe56skyfrwspbr7nphsrgt2kawfc HTTP/1.1" 200 None
+2019-06-26 21:24:45 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 50
+2019-06-26 21:24:45 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=pazadf2lelpzxtxqc44nyr3j4nbhdu7tupgl5ksenkyhepeia66lnzmy3eejs7nyxunpwzixtnsj2
+2019-06-26 21:24:45 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:49 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=pazadf2lelpzxtxqc44nyr3j4nbhdu7tupgl5ksenkyhepeia66lnzmy3eejs7nyxunpwzixtnsj2 HTTP/1.1" 200 None
+2019-06-26 21:24:50 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 75
+2019-06-26 21:24:50 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=7h6qhyrblcadv3heeatofcor5kfokf6skl6rafqtwjykqtaxtbowj6pecozi6xedkscfl2vic4rg4
+2019-06-26 21:24:50 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:52 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=7h6qhyrblcadv3heeatofcor5kfokf6skl6rafqtwjykqtaxtbowj6pecozi6xedkscfl2vic4rg4 HTTP/1.1" 200 None
+2019-06-26 21:24:52 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 100
+2019-06-26 21:24:52 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=fvrkb57uyvftmaknq4xucqktft5fwubax2jold3dpsllqh5e6g33zk2qeilypnj3h6r4ow5sgaa3g
+2019-06-26 21:24:52 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:54 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=fvrkb57uyvftmaknq4xucqktft5fwubax2jold3dpsllqh5e6g33zk2qeilypnj3h6r4ow5sgaa3g HTTP/1.1" 200 None
+2019-06-26 21:24:55 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 125
+2019-06-26 21:24:55 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=mqvyabtmtjlz72vdnl436myapeltcybzdujndw5zcnvult4k7txbda7qmk2gg6poggvcvmsf7subi
+2019-06-26 21:24:55 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:56 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=mqvyabtmtjlz72vdnl436myapeltcybzdujndw5zcnvult4k7txbda7qmk2gg6poggvcvmsf7subi HTTP/1.1" 200 None
+2019-06-26 21:24:56 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 150
+2019-06-26 21:24:56 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=kl4flxklumesm24rnufjr2ezdxpkkh3svoohtnien3wakfn44fcanxwhucnejsa6rvrtg6t6hfosu
+2019-06-26 21:24:56 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:24:57 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=kl4flxklumesm24rnufjr2ezdxpkkh3svoohtnien3wakfn44fcanxwhucnejsa6rvrtg6t6hfosu HTTP/1.1" 200 None
+2019-06-26 21:24:58 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 175
+2019-06-26 21:24:58 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=nbn6idujwhm3qffenfnoiciwklf65la4eu2ikwlki4djne6itl577kxvclzyudta2fzanjlqzvf5u
+2019-06-26 21:24:58 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:00 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=nbn6idujwhm3qffenfnoiciwklf65la4eu2ikwlki4djne6itl577kxvclzyudta2fzanjlqzvf5u HTTP/1.1" 200 None
+2019-06-26 21:25:00 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 200
+2019-06-26 21:25:00 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r5tdhcz3utc4yg2vkxlxs7234pdmdop3iu6neyll2yejfhjtkyh5gdkujnyxk77mzcwgh656nk3is
+2019-06-26 21:25:00 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:03 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r5tdhcz3utc4yg2vkxlxs7234pdmdop3iu6neyll2yejfhjtkyh5gdkujnyxk77mzcwgh656nk3is HTTP/1.1" 200 None
+2019-06-26 21:25:04 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 225
+2019-06-26 21:25:04 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=4l3rfmqkwjtnteaoxzyazburxh7vfza3l3rtz3f3wnphlm6lqmytbortvqzdqpc7ogtnlfnfk53do
+2019-06-26 21:25:04 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:05 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=4l3rfmqkwjtnteaoxzyazburxh7vfza3l3rtz3f3wnphlm6lqmytbortvqzdqpc7ogtnlfnfk53do HTTP/1.1" 200 None
+2019-06-26 21:25:06 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 250
+2019-06-26 21:25:06 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=njp3e2mcsmceihqzmbsagvziu32lhqyahpct5z6qffohgt2cu35z5qg7lvnfdghiekd4sjzuknjcy
+2019-06-26 21:25:06 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:08 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=njp3e2mcsmceihqzmbsagvziu32lhqyahpct5z6qffohgt2cu35z5qg7lvnfdghiekd4sjzuknjcy HTTP/1.1" 200 None
+2019-06-26 21:25:08 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 275
+2019-06-26 21:25:08 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=5ttsqhgzqotbkfihs4z3ln4ob4sqozksb4r4mjsyho5o3tzhsq6x3yu4bbtaqyutnhidr7tns347y
+2019-06-26 21:25:08 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:10 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=5ttsqhgzqotbkfihs4z3ln4ob4sqozksb4r4mjsyho5o3tzhsq6x3yu4bbtaqyutnhidr7tns347y HTTP/1.1" 200 None
+2019-06-26 21:25:10 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 300
+2019-06-26 21:25:10 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dtn25hnsjdppno3tc6xju4bnmyxwim3aypag3nfykip3qgelej7772u6645f5glilutachjazlpli
+2019-06-26 21:25:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:12 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dtn25hnsjdppno3tc6xju4bnmyxwim3aypag3nfykip3qgelej7772u6645f5glilutachjazlpli HTTP/1.1" 200 None
+2019-06-26 21:25:12 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 325
+2019-06-26 21:25:12 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoehllnopasxxj4nfbdrf6pkuct2
+2019-06-26 21:25:12 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:14 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoehllnopasxxj4nfbdrf6pkuct2 HTTP/1.1" 200 None
+2019-06-26 21:25:14 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 350
+2019-06-26 21:25:14 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tey37kvzvrfu2vdn45cche2iniym
+2019-06-26 21:25:14 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:16 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tey37kvzvrfu2vdn45cche2iniym HTTP/1.1" 200 None
+2019-06-26 21:25:17 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 375
+2019-06-26 21:25:17 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddhsuw5titxgmf6xpaasatfxp42g
+2019-06-26 21:25:17 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:19 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddhsuw5titxgmf6xpaasatfxp42g HTTP/1.1" 200 None
+2019-06-26 21:25:20 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 400
+2019-06-26 21:25:20 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cp3yzytyoyq23h4xuz4oa7ob3va
+2019-06-26 21:25:20 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:22 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cp3yzytyoyq23h4xuz4oa7ob3va HTTP/1.1" 200 None
+2019-06-26 21:25:22 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 425
+2019-06-26 21:25:22 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cvvjwjpgnm3rv4lsmgmc6mumm3a
+2019-06-26 21:25:22 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:23 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2cvvjwjpgnm3rv4lsmgmc6mumm3a HTTP/1.1" 200 None
+2019-06-26 21:25:24 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 450
+2019-06-26 21:25:24 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dm2q7iokztuobzplbqqmmduj2ta
+2019-06-26 21:25:24 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:25 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dm2q7iokztuobzplbqqmmduj2ta HTTP/1.1" 200 None
+2019-06-26 21:25:26 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 475
+2019-06-26 21:25:26 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dvvl3mqbnh2tjpivqe56b6vybgq
+2019-06-26 21:25:26 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:26 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2dvvl3mqbnh2tjpivqe56b6vybgq HTTP/1.1" 200 None
+2019-06-26 21:25:27 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 500
+2019-06-26 21:25:27 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7idzqbdtoqa3hnwcskdi33not3sow
+2019-06-26 21:25:27 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:28 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7idzqbdtoqa3hnwcskdi33not3sow HTTP/1.1" 200 None
+2019-06-26 21:25:28 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 525
+2019-06-26 21:25:28 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmufve2jhoasv43kks5e4iyk232ow
+2019-06-26 21:25:28 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:29 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmufve2jhoasv43kks5e4iyk232ow HTTP/1.1" 200 None
+2019-06-26 21:25:29 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 550
+2019-06-26 21:25:29 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmug4cahxgglbyirelv44jeeocr7u
+2019-06-26 21:25:29 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:31 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmug4cahxgglbyirelv44jeeocr7u HTTP/1.1" 200 None
+2019-06-26 21:25:31 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 575
+2019-06-26 21:25:31 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuamy5wfmwsnj2436fba4hunhqd2
+2019-06-26 21:25:31 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuamy5wfmwsnj2436fba4hunhqd2 HTTP/1.1" 200 None
+2019-06-26 21:25:33 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 600
+2019-06-26 21:25:33 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=qcjotya3hmtuxnxnowtdhmukhcnpk32ws3bg44tgsc2ec6qtms3si3sv5nigk3laelk5l5ynu5dmg
+2019-06-26 21:25:33 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:35 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=qcjotya3hmtuxnxnowtdhmukhcnpk32ws3bg44tgsc2ec6qtms3si3sv5nigk3laelk5l5ynu5dmg HTTP/1.1" 200 None
+2019-06-26 21:25:36 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 625
+2019-06-26 21:25:36 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlspto7fusp7cdoe3li4xlq5p7kja
+2019-06-26 21:25:36 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:37 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlspto7fusp7cdoe3li4xlq5p7kja HTTP/1.1" 200 None
+2019-06-26 21:25:38 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 650
+2019-06-26 21:25:38 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzywyi7pkmtrqloy64atdq5i2dks
+2019-06-26 21:25:38 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:39 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzywyi7pkmtrqloy64atdq5i2dks HTTP/1.1" 200 None
+2019-06-26 21:25:39 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 675
+2019-06-26 21:25:39 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmz2sfzjczy27scjmzme34svhxx4g
+2019-06-26 21:25:39 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:25:42 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmz2sfzjczy27scjmzme34svhxx4g HTTP/1.1" 200 None
+2019-06-26 21:26:00 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 700
+2019-06-26 21:26:00 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw67lmcviqgs2mirsc4wzj4t3dknu
+2019-06-26 21:26:00 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:01 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw67lmcviqgs2mirsc4wzj4t3dknu HTTP/1.1" 200 None
+2019-06-26 21:26:02 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 725
+2019-06-26 21:26:02 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw65cxz32gsf3fuommnaxyptwjtga
+2019-06-26 21:26:02 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:04 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw65cxz32gsf3fuommnaxyptwjtga HTTP/1.1" 200 None
+2019-06-26 21:26:04 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 750
+2019-06-26 21:26:04 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6s4juoq6mjr4t62bsgztg4hxfrk
+2019-06-26 21:26:04 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:06 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6s4juoq6mjr4t62bsgztg4hxfrk HTTP/1.1" 200 None
+2019-06-26 21:26:06 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 775
+2019-06-26 21:26:06 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjubkwjgfdfcxs2ifpvcytkhzx5gg
+2019-06-26 21:26:06 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:09 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjubkwjgfdfcxs2ifpvcytkhzx5gg HTTP/1.1" 200 None
+2019-06-26 21:26:10 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 800
+2019-06-26 21:26:10 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqll372r4dplolq3nf7e2ibfsde4
+2019-06-26 21:26:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:12 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqll372r4dplolq3nf7e2ibfsde4 HTTP/1.1" 200 None
+2019-06-26 21:26:12 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 825
+2019-06-26 21:26:12 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7gao2cbp2yovkahwdj5w7d7nkxza
+2019-06-26 21:26:12 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:14 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7gao2cbp2yovkahwdj5w7d7nkxza HTTP/1.1" 200 None
+2019-06-26 21:26:14 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 850
+2019-06-26 21:26:14 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7g5vvuocztjiaarmodhzktnxyzfq
+2019-06-26 21:26:14 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:16 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7g5vvuocztjiaarmodhzktnxyzfq HTTP/1.1" 200 None
+2019-06-26 21:26:17 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 875
+2019-06-26 21:26:17 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fc3as3jxv3svpppdxwmcjrlw7iq
+2019-06-26 21:26:17 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:18 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fc3as3jxv3svpppdxwmcjrlw7iq HTTP/1.1" 200 None
+2019-06-26 21:26:19 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 900
+2019-06-26 21:26:19 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fplryxujqpqgt4h5aqjf24kvfkq
+2019-06-26 21:26:19 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:21 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fplryxujqpqgt4h5aqjf24kvfkq HTTP/1.1" 200 None
+2019-06-26 21:26:22 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 925
+2019-06-26 21:26:22 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7ewpvusw5svyjgh25sqtme6ss6la
+2019-06-26 21:26:22 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 21:26:28 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt3896198/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7ewpvusw5svyjgh25sqtme6ss6la HTTP/1.1" 200 None
+2019-06-26 21:26:28 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 950
+2019-06-26 21:26:28 - imdb_scraper.py[line:404] - DEBUG: next review_page url: None
+2019-06-26 21:26:28 - imdb_scraper.py[line:416] - DEBUG: # of reviews: 954
+2019-06-26 22:04:03 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:06 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/ HTTP/1.1" 200 None
+2019-06-26 22:04:06 - imdb_scraper.py[line:60] - DEBUG: poster_url: https://www.imdb.com/title/tt0110081/mediaviewer/rm861044480
+2019-06-26 22:04:06 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:08 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/mediaviewer/rm861044480 HTTP/1.1" 200 None
+2019-06-26 22:04:08 - imdb_scraper.py[line:70] - DEBUG: poster_image_url: https://m.media-amazon.com/images/M/MV5BMWQ2OTRlNzMtM2ZiNi00YzlkLWIyNjEtNjg2NGIzYjc1NmEwXkEyXkFqcGdeQXVyMjcxNjI4NTk@._V1_SY1000_CR0,0,666,1000_AL_.jpg
+2019-06-26 22:04:08 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): m.media-amazon.com:443
+2019-06-26 22:04:12 - connectionpool.py[line:393] - DEBUG: https://m.media-amazon.com:443 "GET /images/M/MV5BMWQ2OTRlNzMtM2ZiNi00YzlkLWIyNjEtNjg2NGIzYjc1NmEwXkEyXkFqcGdeQXVyMjcxNjI4NTk@._V1_SY1000_CR0,0,666,1000_AL_.jpg HTTP/1.1" 200 83876
+2019-06-26 22:04:12 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:14 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/plotsummary HTTP/1.1" 200 None
+2019-06-26 22:04:14 - imdb_scraper.py[line:113] - DEBUG: # of summaries: 2
+2019-06-26 22:04:14 - imdb_scraper.py[line:143] - DEBUG: trivia_url: https://www.imdb.com/title/tt0110081/trivia
+2019-06-26 22:04:14 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:17 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/trivia HTTP/1.1" 200 None
+2019-06-26 22:04:18 - imdb_scraper.py[line:166] - DEBUG: # of trivia: 3
+2019-06-26 22:04:18 - imdb_scraper.py[line:224] - DEBUG: # of goofs: 0
+2019-06-26 22:04:18 - imdb_scraper.py[line:255] - DEBUG: quotes_urlhttps://www.imdb.com/title/tt0110081/trivia?tab=qt
+2019-06-26 22:04:18 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:20 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/trivia?tab=qt HTTP/1.1" 302 235
+2019-06-26 22:04:21 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/quotes/?tab=qt HTTP/1.1" 200 None
+2019-06-26 22:04:22 - imdb_scraper.py[line:284] - DEBUG: # of quotes: 3
+2019-06-26 22:04:22 - imdb_scraper.py[line:303] - DEBUG: No FAQ.
+2019-06-26 22:04:22 - imdb_scraper.py[line:392] - DEBUG: review_url: https://www.imdb.com/title/tt0110081/reviews
+2019-06-26 22:04:22 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:24 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/reviews HTTP/1.1" 200 None
+2019-06-26 22:04:26 - imdb_scraper.py[line:398] - DEBUG: # of reviews in this page: 25
+2019-06-26 22:04:26 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2atams5nwg6yseaygmofuuqusehq
+2019-06-26 22:04:26 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:30 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2atams5nwg6yseaygmofuuqusehq HTTP/1.1" 200 None
+2019-06-26 22:04:31 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 25
+2019-06-26 22:04:31 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzsltvdczlugi7m6clucsgleb2su
+2019-06-26 22:04:31 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:33 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzsltvdczlugi7m6clucsgleb2su HTTP/1.1" 200 None
+2019-06-26 22:04:34 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 50
+2019-06-26 22:04:34 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fojrqmzdwqpcqycauscoggztywq
+2019-06-26 22:04:34 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-26 22:04:36 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt0110081/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fojrqmzdwqpcqycauscoggztywq HTTP/1.1" 200 None
+2019-06-26 22:04:36 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 75
+2019-06-26 22:04:36 - imdb_scraper.py[line:404] - DEBUG: next review_page url: None
+2019-06-26 22:04:36 - imdb_scraper.py[line:416] - DEBUG: # of reviews: 93
+2019-06-27 11:27:46 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:49 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/ HTTP/1.1" 200 None
+2019-06-27 11:27:49 - imdb_scraper.py[line:60] - DEBUG: poster_url: https://www.imdb.com/title/tt2015381/mediaviewer/rm1108790784
+2019-06-27 11:27:49 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:50 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/mediaviewer/rm1108790784 HTTP/1.1" 200 None
+2019-06-27 11:27:51 - imdb_scraper.py[line:70] - DEBUG: poster_image_url: https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_SY1000_CR0,0,674,1000_AL_.jpg
+2019-06-27 11:27:51 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): m.media-amazon.com:443
+2019-06-27 11:27:51 - connectionpool.py[line:393] - DEBUG: https://m.media-amazon.com:443 "GET /images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_SY1000_CR0,0,674,1000_AL_.jpg HTTP/1.1" 200 152089
+2019-06-27 11:27:51 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:52 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/plotsummary HTTP/1.1" 200 None
+2019-06-27 11:27:52 - imdb_scraper.py[line:113] - DEBUG: # of summaries: 4
+2019-06-27 11:27:53 - imdb_scraper.py[line:143] - DEBUG: trivia_url: https://www.imdb.com/title/tt2015381/trivia
+2019-06-27 11:27:53 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:54 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/trivia HTTP/1.1" 200 None
+2019-06-27 11:27:54 - imdb_scraper.py[line:166] - DEBUG: # of trivia: 259
+2019-06-27 11:27:54 - imdb_scraper.py[line:227] - DEBUG: goofs_url: https://www.imdb.com/title/tt2015381/trivia?tab=gf
+2019-06-27 11:27:54 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:55 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/trivia?tab=gf HTTP/1.1" 302 234
+2019-06-27 11:27:55 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/goofs/?tab=gf HTTP/1.1" 200 None
+2019-06-27 11:27:56 - imdb_scraper.py[line:236] - DEBUG: # of goofs: 26
+2019-06-27 11:27:56 - imdb_scraper.py[line:255] - DEBUG: quotes_urlhttps://www.imdb.com/title/tt2015381/trivia?tab=qt
+2019-06-27 11:27:56 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:56 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/trivia?tab=qt HTTP/1.1" 302 235
+2019-06-27 11:27:57 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/quotes/?tab=qt HTTP/1.1" 200 None
+2019-06-27 11:27:58 - imdb_scraper.py[line:284] - DEBUG: # of quotes: 120
+2019-06-27 11:27:58 - imdb_scraper.py[line:306] - DEBUG: FAQ_url: https://www.imdb.com/title/tt2015381/faq
+2019-06-27 11:27:58 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:27:59 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/faq HTTP/1.1" 200 None
+2019-06-27 11:27:59 - imdb_scraper.py[line:319] - DEBUG: # of FAQ: 12
+2019-06-27 11:27:59 - imdb_scraper.py[line:392] - DEBUG: review_url: https://www.imdb.com/title/tt2015381/reviews
+2019-06-27 11:27:59 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:00 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews HTTP/1.1" 200 None
+2019-06-27 11:28:01 - imdb_scraper.py[line:398] - DEBUG: # of reviews in this page: 25
+2019-06-27 11:28:01 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=o66dfueni7yzf5tzh7iduprjphf65la4eu2ikwlki4djne6itl57jzyris5dix25w27axplve2dia
+2019-06-27 11:28:01 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:02 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=o66dfueni7yzf5tzh7iduprjphf65la4eu2ikwlki4djne6itl57jzyris5dix25w27axplve2dia HTTP/1.1" 200 None
+2019-06-27 11:28:02 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 25
+2019-06-27 11:28:02 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=coekslzkoraqmud67mh3h7dlzed47piagakpwdyqjslep6ujiugzvwn3xqvws54mthfwnoklfcmmy
+2019-06-27 11:28:02 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:03 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=coekslzkoraqmud67mh3h7dlzed47piagakpwdyqjslep6ujiugzvwn3xqvws54mthfwnoklfcmmy HTTP/1.1" 200 None
+2019-06-27 11:28:03 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 50
+2019-06-27 11:28:04 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=62tvcskx4xoiz2vvgmmevar24rwarmp3q6gx2t2beojzgpux4yyzz7qsesjy57htxmydxcaufgw2e
+2019-06-27 11:28:04 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:05 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=62tvcskx4xoiz2vvgmmevar24rwarmp3q6gx2t2beojzgpux4yyzz7qsesjy57htxmydxcaufgw2e HTTP/1.1" 200 None
+2019-06-27 11:28:05 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 75
+2019-06-27 11:28:05 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xk2n47y5rwyj3qaliil57uxvwoblkpwixqozf7ros5mv35is6ykmrkmjdalswdmvj5s7rlhfoi3qm
+2019-06-27 11:28:05 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:06 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xk2n47y5rwyj3qaliil57uxvwoblkpwixqozf7ros5mv35is6ykmrkmjdalswdmvj5s7rlhfoi3qm HTTP/1.1" 200 None
+2019-06-27 11:28:06 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 100
+2019-06-27 11:28:06 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=7hvr6exxamwqgfhxelisjhhxah25zkuhomxmmbfdt5mr25hmteeygwwtoxhpgcbj6pxmhufz4hsdc
+2019-06-27 11:28:06 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:07 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=7hvr6exxamwqgfhxelisjhhxah25zkuhomxmmbfdt5mr25hmteeygwwtoxhpgcbj6pxmhufz4hsdc HTTP/1.1" 200 None
+2019-06-27 11:28:07 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 125
+2019-06-27 11:28:07 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=f2umya43y5vuxiwbjczymlfrq3cs7idqrnp4u747hpjkah4wjoyxoag7bvpathk7hj26ljt6oyk3m
+2019-06-27 11:28:07 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:09 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=f2umya43y5vuxiwbjczymlfrq3cs7idqrnp4u747hpjkah4wjoyxoag7bvpathk7hj26ljt6oyk3m HTTP/1.1" 200 None
+2019-06-27 11:28:09 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 150
+2019-06-27 11:28:09 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hmxqhbxg3clukgwtmkpwgvcw5j3y4o5jfvdle3g3756aiu3ahxrv3cpan3iiz4677rqufacin34sy
+2019-06-27 11:28:09 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:10 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hmxqhbxg3clukgwtmkpwgvcw5j3y4o5jfvdle3g3756aiu3ahxrv3cpan3iiz4677rqufacin34sy HTTP/1.1" 200 None
+2019-06-27 11:28:10 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 175
+2019-06-27 11:28:10 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=nwzg6cikacr2pdn3rlshb3l2wqieievb2c4kx5kvyihzqdvhrz26765moi4gg6smjuakhnrk773c2
+2019-06-27 11:28:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:11 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=nwzg6cikacr2pdn3rlshb3l2wqieievb2c4kx5kvyihzqdvhrz26765moi4gg6smjuakhnrk773c2 HTTP/1.1" 200 None
+2019-06-27 11:28:11 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 200
+2019-06-27 11:28:11 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=yyh3jybbnzfwi6lbrdcnxqq34qsvgevvaorviqo5fynxhkhlaxrzqlj35k2w5tzq6zb66qw2xqs5c
+2019-06-27 11:28:11 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:12 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=yyh3jybbnzfwi6lbrdcnxqq34qsvgevvaorviqo5fynxhkhlaxrzqlj35k2w5tzq6zb66qw2xqs5c HTTP/1.1" 200 None
+2019-06-27 11:28:13 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 225
+2019-06-27 11:28:13 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qkxa6j6axjmlfi7awhzxigplinw7dmqbh2wt5owq4jbrn5wp46fl4gy2nkhz7zsyco6ari5ezsyu
+2019-06-27 11:28:13 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:14 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qkxa6j6axjmlfi7awhzxigplinw7dmqbh2wt5owq4jbrn5wp46fl4gy2nkhz7zsyco6ari5ezsyu HTTP/1.1" 200 None
+2019-06-27 11:28:14 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 250
+2019-06-27 11:28:14 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qkxa6j6axjmlfi7awhzxigplinw7dmqbh2wt5owq4jbrn5wp46mgn7brlrkgqtl6lpaa46gyvb4i
+2019-06-27 11:28:14 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:15 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qkxa6j6axjmlfi7awhzxigplinw7dmqbh2wt5owq4jbrn5wp46mgn7brlrkgqtl6lpaa46gyvb4i HTTP/1.1" 200 None
+2019-06-27 11:28:16 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 275
+2019-06-27 11:28:16 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=f4vsaklaud5bfskdzalsk2b5vougkj7q47zqn2uuqtktyxlyc5g33cdvvodndhljhsa2muosapcoc
+2019-06-27 11:28:16 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:17 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=f4vsaklaud5bfskdzalsk2b5vougkj7q47zqn2uuqtktyxlyc5g33cdvvodndhljhsa2muosapcoc HTTP/1.1" 200 None
+2019-06-27 11:28:17 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 300
+2019-06-27 11:28:17 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hvcfgaybz3xnoml3aqudfmci5rx5gwu7he5tizttznqu4ikucdm5afpg4c3q3rdsfu7t3h6zbb2ey
+2019-06-27 11:28:17 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:19 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hvcfgaybz3xnoml3aqudfmci5rx5gwu7he5tizttznqu4ikucdm5afpg4c3q3rdsfu7t3h6zbb2ey HTTP/1.1" 200 None
+2019-06-27 11:28:19 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 325
+2019-06-27 11:28:19 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=crj2n3fylqehz3p2xdyj76rszychkw46yt6o2doe5hijemcspgbbxgv2c5ciogndo44prctoksefm
+2019-06-27 11:28:19 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:20 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=crj2n3fylqehz3p2xdyj76rszychkw46yt6o2doe5hijemcspgbbxgv2c5ciogndo44prctoksefm HTTP/1.1" 200 None
+2019-06-27 11:28:20 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 350
+2019-06-27 11:28:20 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoiyhpainloxaimt2zrcl67qmboo
+2019-06-27 11:28:20 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:21 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqoiyhpainloxaimt2zrcl67qmboo HTTP/1.1" 200 None
+2019-06-27 11:28:22 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 375
+2019-06-27 11:28:22 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqohk2st3htfjl3cw5p7hcjbc7ix6
+2019-06-27 11:28:22 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:23 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=dxk6gsoksqnrwvlqrqw6rjur34cuxvximpf5twt53ayp32f4eqohk2st3htfjl3cw5p7hcjbc7ix6 HTTP/1.1" 200 None
+2019-06-27 11:28:23 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 400
+2019-06-27 11:28:23 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=z7jwiklur5l2a2ke3wpfdfnmaec5g5smlfwjz3ukdd5gbq73xxzifrknlsygaavd5qvuka6dkaqa6
+2019-06-27 11:28:23 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:24 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=z7jwiklur5l2a2ke3wpfdfnmaec5g5smlfwjz3ukdd5gbq73xxzifrknlsygaavd5qvuka6dkaqa6 HTTP/1.1" 200 None
+2019-06-27 11:28:25 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 425
+2019-06-27 11:28:25 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tewzoz62lg3664mdimgmej3u7ncc
+2019-06-27 11:28:25 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:26 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=csoz3nxdraocqxi5gocuh4iwvbxlmnqfuku222nbqwrnn5qe3tewzoz62lg3664mdimgmej3u7ncc HTTP/1.1" 200 None
+2019-06-27 11:28:27 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 450
+2019-06-27 11:28:27 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uet7jxnz5rr3b2dy6xbnhr7j7os4arrn76el5plhjbq3jpi2r5xjtq2xrr272uee27tszgwnbnsgo
+2019-06-27 11:28:27 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:28 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uet7jxnz5rr3b2dy6xbnhr7j7os4arrn76el5plhjbq3jpi2r5xjtq2xrr272uee27tszgwnbnsgo HTTP/1.1" 200 None
+2019-06-27 11:28:29 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 475
+2019-06-27 11:28:29 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddnnukw3zv3spqjhmaot52xf7ufy
+2019-06-27 11:28:29 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:30 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememddnnukw3zv3spqjhmaot52xf7ufy HTTP/1.1" 200 None
+2019-06-27 11:28:30 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 500
+2019-06-27 11:28:30 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememdddfjdakuk3lmlsp6mhaca2g4mlu
+2019-06-27 11:28:30 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:31 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rd3aonypsjmueu7jgusszxyeet2ztkzih2bx3rxp6jit2ememdddfjdakuk3lmlsp6mhaca2g4mlu HTTP/1.1" 200 None
+2019-06-27 11:28:31 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 525
+2019-06-27 11:28:31 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2bjzfnx26ghckatzt3k27eazbv2a
+2019-06-27 11:28:31 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:32 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2bjzfnx26ghckatzt3k27eazbv2a HTTP/1.1" 200 None
+2019-06-27 11:28:33 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 550
+2019-06-27 11:28:33 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2d5pj2bduhnss4xdpzlyvzz4bqfq
+2019-06-27 11:28:33 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:34 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=xg3dl37jc3pp57flmlm54hdd2d5pj2bduhnss4xdpzlyvzz4bqfq HTTP/1.1" 200 None
+2019-06-27 11:28:34 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 575
+2019-06-27 11:28:34 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7id4a2yva7ldwzsepdxz67jukgk4m
+2019-06-27 11:28:34 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:35 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=r4j3i6zugm4l2h3m7l343efmvnjmcyk2fsqqivqlpit6xvac7id4a2yva7ldwzsepdxz67jukgk4m HTTP/1.1" 200 None
+2019-06-27 11:28:35 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 600
+2019-06-27 11:28:35 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuiav2ex4mgtkjg4rzh6hky4kqoi
+2019-06-27 11:28:35 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:36 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=yrw5uumbbg5ojdgby4jpiusmto7plij4pvm4jss6fffunap3mmuiav2ex4mgtkjg4rzh6hky4kqoi HTTP/1.1" 200 None
+2019-06-27 11:28:37 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 625
+2019-06-27 11:28:37 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=b2i7yuzvw6nktwyoq4snbndfmlf7umrhii5vmkqrvnautbe3bfhrad3bno5fn6aairvwimvtvhiyo
+2019-06-27 11:28:37 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:38 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=b2i7yuzvw6nktwyoq4snbndfmlf7umrhii5vmkqrvnautbe3bfhrad3bno5fn6aairvwimvtvhiyo HTTP/1.1" 200 None
+2019-06-27 11:28:38 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 650
+2019-06-27 11:28:38 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlscevazcihwqsamsygl3u2povbgw
+2019-06-27 11:28:38 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:39 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=szxijmxtcqswmubwqlpmxex3pyipfmd4ac5cic6esxj3vlogdlscevazcihwqsamsygl3u2povbgw HTTP/1.1" 200 None
+2019-06-27 11:28:39 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 675
+2019-06-27 11:28:39 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzympdwnhnlizggaxgffmqzc3s7w
+2019-06-27 11:28:39 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:40 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzympdwnhnlizggaxgffmqzc3s7w HTTP/1.1" 200 None
+2019-06-27 11:28:40 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 700
+2019-06-27 11:28:40 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmztzvw6g55xujgwc366zkoqkm7ts
+2019-06-27 11:28:40 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:41 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmztzvw6g55xujgwc366zkoqkm7ts HTTP/1.1" 200 None
+2019-06-27 11:28:42 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 725
+2019-06-27 11:28:42 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzuzjphoywacsfcfqnwv7ctinvrk
+2019-06-27 11:28:42 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:42 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=hcjq3kdifr5ocgd44ejpirm3mcqnbnf22prj2465byygdutytmzuzjphoywacsfcfqnwv7ctinvrk HTTP/1.1" 200 None
+2019-06-27 11:28:43 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 750
+2019-06-27 11:28:43 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=c5rmvllozbeeabh55yce7ptxy7zm473e254jbhrjsxsoehfdxfderh5rcjajvyqtqxism2w75tcgk
+2019-06-27 11:28:43 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:44 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=c5rmvllozbeeabh55yce7ptxy7zm473e254jbhrjsxsoehfdxfderh5rcjajvyqtqxism2w75tcgk HTTP/1.1" 200 None
+2019-06-27 11:28:45 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 775
+2019-06-27 11:28:45 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=zv6lvkmruzk3qzkvyho52kznouramn6v7pn6kbwgftgd6jnvz5vqfxzxxyiryjgc6kf4qhaj75b2o
+2019-06-27 11:28:45 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:46 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=zv6lvkmruzk3qzkvyho52kznouramn6v7pn6kbwgftgd6jnvz5vqfxzxxyiryjgc6kf4qhaj75b2o HTTP/1.1" 200 None
+2019-06-27 11:28:46 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 800
+2019-06-27 11:28:46 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6zsletbuojgjb3vc737h3raj3z2
+2019-06-27 11:28:46 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:47 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6zsletbuojgjb3vc737h3raj3z2 HTTP/1.1" 200 None
+2019-06-27 11:28:48 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 825
+2019-06-27 11:28:48 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6vmoepcxqcce5flixhcb46mtbxo
+2019-06-27 11:28:48 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:49 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=2e23ny5brzwmnavhnfujctbeyeqakiajaukg2f47naiu7vdelw6vmoepcxqcce5flixhcb46mtbxo HTTP/1.1" 200 None
+2019-06-27 11:28:50 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 850
+2019-06-27 11:28:50 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjucxdygzvenyfoevtvvxuivutcxy
+2019-06-27 11:28:50 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:51 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjucxdygzvenyfoevtvvxuivutcxy HTTP/1.1" 200 None
+2019-06-27 11:28:51 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 875
+2019-06-27 11:28:51 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjukb34xdi34zmjz5jg5ytszejyra
+2019-06-27 11:28:51 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:52 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjukb34xdi34zmjz5jg5ytszejyra HTTP/1.1" 200 None
+2019-06-27 11:28:52 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 900
+2019-06-27 11:28:52 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuc5k7pnbpxeq7bxoz6s66vp2i26
+2019-06-27 11:28:52 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:53 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuc5k7pnbpxeq7bxoz6s66vp2i26 HTTP/1.1" 200 None
+2019-06-27 11:28:53 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 925
+2019-06-27 11:28:53 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuo3q3hfnxj6gi43c2rznhgv7m3c
+2019-06-27 11:28:53 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:57 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuo3q3hfnxj6gi43c2rznhgv7m3c HTTP/1.1" 200 None
+2019-06-27 11:28:57 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 950
+2019-06-27 11:28:57 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuaust5d3ffae32uvc7za3pcb332
+2019-06-27 11:28:57 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:58 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=3qwk2rpv3a2klqbaq5oxdvfi6y63gcjyyes2kx7mph7cswx7gjuaust5d3ffae32uvc7za3pcb332 HTTP/1.1" 200 None
+2019-06-27 11:28:58 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 975
+2019-06-27 11:28:58 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqdl5ikd7xpioeu7x2cgiwjqninq
+2019-06-27 11:28:58 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:28:59 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqdl5ikd7xpioeu7x2cgiwjqninq HTTP/1.1" 200 None
+2019-06-27 11:29:00 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1000
+2019-06-27 11:29:00 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqk53o4dhqx6esld473jair4vh74
+2019-06-27 11:29:00 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:01 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=rwfy7ujgrxdbfqqwgq7zyi45gqfuzesavqhfaqxpngfa256c5pqk53o4dhqx6esld473jair4vh74 HTTP/1.1" 200 None
+2019-06-27 11:29:02 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1025
+2019-06-27 11:29:02 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uchukujcdg2yyggdghjm22m76x2gk5dvaybbw5i6rdeouvajizr4a7cty4o5suqvtuqm7s55evcc4
+2019-06-27 11:29:02 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:05 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uchukujcdg2yyggdghjm22m76x2gk5dvaybbw5i6rdeouvajizr4a7cty4o5suqvtuqm7s55evcc4 HTTP/1.1" 200 None
+2019-06-27 11:29:05 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1050
+2019-06-27 11:29:05 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uchukujcdg2yyggdghjm22m76x2gk5dvaybbw5i6rdeouvajizr3igwbd2xk4k64funrctigpxhni
+2019-06-27 11:29:05 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:06 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=uchukujcdg2yyggdghjm22m76x2gk5dvaybbw5i6rdeouvajizr3igwbd2xk4k64funrctigpxhni HTTP/1.1" 200 None
+2019-06-27 11:29:07 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1075
+2019-06-27 11:29:07 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=naoqu3s2tt23lfqzmyyfcslfsj2thmeoqxqdr2vgjmliqdwy2sw3novs5pi5tsqhm7cxczflr2mhu
+2019-06-27 11:29:07 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:08 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=naoqu3s2tt23lfqzmyyfcslfsj2thmeoqxqdr2vgjmliqdwy2sw3novs5pi5tsqhm7cxczflr2mhu HTTP/1.1" 200 None
+2019-06-27 11:29:08 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1100
+2019-06-27 11:29:08 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fuour5ov3f5uevfonmtv6db7yma
+2019-06-27 11:29:08 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:09 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fuour5ov3f5uevfonmtv6db7yma HTTP/1.1" 200 None
+2019-06-27 11:29:09 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1125
+2019-06-27 11:29:09 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7epsg6s3r2sqds7nucl65tykdrpq
+2019-06-27 11:29:09 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:10 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7epsg6s3r2sqds7nucl65tykdrpq HTTP/1.1" 200 None
+2019-06-27 11:29:10 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1150
+2019-06-27 11:29:10 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7e2ckwy7lwe5lou6btxcs3madk7q
+2019-06-27 11:29:10 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:12 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7e2ckwy7lwe5lou6btxcs3madk7q HTTP/1.1" 200 None
+2019-06-27 11:29:13 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1175
+2019-06-27 11:29:13 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7hano7k6hr6bzimufkj5vjis32da
+2019-06-27 11:29:13 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:14 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7hano7k6hr6bzimufkj5vjis32da HTTP/1.1" 200 None
+2019-06-27 11:29:15 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1200
+2019-06-27 11:29:15 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fsbjspczlddwp7o4kymuaa5xctq
+2019-06-27 11:29:15 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:16 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7fsbjspczlddwp7o4kymuaa5xctq HTTP/1.1" 200 None
+2019-06-27 11:29:16 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1225
+2019-06-27 11:29:16 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7hed2c4w5hvmtbytohrvuoacsrqa
+2019-06-27 11:29:16 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:17 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7hed2c4w5hvmtbytohrvuoacsrqa HTTP/1.1" 200 None
+2019-06-27 11:29:17 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1250
+2019-06-27 11:29:17 - imdb_scraper.py[line:404] - DEBUG: next review_page url: https://www.imdb.com/title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7e5ni7y2wfjh7lnz3bg7mjdhlitq
+2019-06-27 11:29:17 - connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): www.imdb.com:443
+2019-06-27 11:29:18 - connectionpool.py[line:393] - DEBUG: https://www.imdb.com:443 "GET /title/tt2015381/reviews/_ajax?ref_=undefined&paginationKey=lrg45nt35megmizbhdvzcrbg7e5ni7y2wfjh7lnz3bg7mjdhlitq HTTP/1.1" 200 None
+2019-06-27 11:29:18 - imdb_scraper.py[line:410] - DEBUG: # of reviews in this page: 1275
+2019-06-27 11:29:18 - imdb_scraper.py[line:404] - DEBUG: next review_page url: None
+2019-06-27 11:29:18 - imdb_scraper.py[line:416] - DEBUG: # of reviews: 1296
