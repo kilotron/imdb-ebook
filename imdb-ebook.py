@@ -167,14 +167,17 @@ if __name__ == '__main__':
         os.chdir(working_dir + movie_title)
         try:
             return_code = subprocess.call(["xelatex", movie_title + '.tex', '-interaction=nonstopmode'], stdout=open(os.devnull, 'w'))
+            os.chdir('../../')
             if return_code != 0:
                 print('失败，请检查tex源文件中的错误，手动编译')
+                if os.path.exists(movie_title):
+                    shutil.rmtree(movie_title)
+                shutil.copytree(working_dir + movie_title, movie_title)
             else:
-                if os.path.exists('../../' + movie_title + '.pdf'):
+                if os.path.exists(movie_title + '.pdf'):
                     print('覆盖文件')
-                    os.remove('../../' + movie_title + '.pdf')
-                shutil.move(movie_title + '.pdf', '../../')
-            os.chdir('../../')
+                    os.remove(movie_title + '.pdf')
+                shutil.move(movie_title + '.pdf', './')
         except FileNotFoundError as e:
             print('找不到xelatex，请手动编译' + movie_title + '\\目录里的tex源文件。')
             os.chdir('../')

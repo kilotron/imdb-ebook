@@ -40,7 +40,7 @@ def interval_replace(s, old, new_odd, new_even):
 
 def replace_tex_special_char(s):
     d = {
-        '\\': '\\textbackslash', # first one
+        '\\': '\\textbackslash{}', # first one
         '#': '\\#',
         '$': '\\$',
         '%': '\\%',
