@@ -6,6 +6,7 @@
 \usepackage{indentfirst}
 \usepackage{amssymb} % \bigstar
 \nonstopmode % do not stop on error
+\hypersetup{hidelinks}
 \setmainfont{MinionPro-Regular.otf}[
     BoldFont=MinionPro-Bold.otf,
     ItalicFont=MinionPro-It.otf,
@@ -23,7 +24,7 @@
         \vspace*{\stretch{1}}
         \begin{center}
             \LARGE
-            {\Huge \@title} \\
+            {\Huge \href{#movie_url#}{\@title}} \\
             \vspace{\stretch{1}}
             {\huge #rating_value# \Large /10 based on #rating_count# user ratings} \\
             \vspace{\stretch{6}}

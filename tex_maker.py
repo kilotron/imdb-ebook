@@ -11,14 +11,16 @@ def write_title_page(cursor, movie_title, template):
     Retuns:
         the template with metadata about the movie.
     """
-    cursor.execute('SELECT year, rating_value, rating_count FROM movie WHERE title=?', (movie_title,))
+    cursor.execute('SELECT year, rating_value, rating_count, url FROM movie WHERE title=?', (movie_title,))
     result = cursor.fetchone()
     year = str(result[0])
     rating_value = str(result[1])
     rating_count = str(result[2])
+    movie_url = result[3]
     template = template.replace('#movie_title#', movie_title)
     template = template.replace('#year#', year)
     template = template.replace('#rating_value#', rating_value)
+    template = template.replace('#movie_url#', movie_url)
     return template.replace('#rating_count#', rating_count)
 
 def interval_replace(s, old, new_odd, new_even):
@@ -60,8 +62,19 @@ def replace_tex_special_char(s):
     # if s.count('\'') % 2 == 0:
     #     s = interval_replace(s, '\'', '`', '\'')
     if s.count('"') % 2 == 0:
-        s = interval_replace(s, '"', '``', '\'\'')    
-    return s
+        s = interval_replace(s, '"', '``', '\'\'')
+    # Replace control characters in ASCII. Some characters such as delete 
+    # character(0x7F) might appear in text from Internet.
+    replaced_str = ''
+    for i in s:
+        # Parameter byteorder and signed do not affect the result since only 
+        # ASCII characters are examined.
+        code = int.from_bytes(i.encode('utf8'), byteorder='big', signed=False)
+        if 0 <= code <= 31 or code == 127:
+            replaced_str += ' ' # replace it with space
+        else:
+            replaced_str += i
+    return replaced_str
 
 def write_synopsis(cursor, movie_title, template):
     cursor.execute('SELECT synopsis FROM movie WHERE title=?', (movie_title,))

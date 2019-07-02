@@ -177,7 +177,7 @@ if __name__ == '__main__':
                 if os.path.exists(movie_title + '.pdf'):
                     print('覆盖文件')
                     os.remove(movie_title + '.pdf')
-                shutil.move(movie_title + '.pdf', './')
+                shutil.move(os.path.join(working_dir, movie_title, movie_title + '.pdf'), './')
         except FileNotFoundError as e:
             print('找不到xelatex，请手动编译' + movie_title + '\\目录里的tex源文件。')
             os.chdir('../')
